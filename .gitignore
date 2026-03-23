@@ -219,6 +219,12 @@ sympy-plots-for-*.tex/
 *.pytxcode
 pythontex-files-*/
 
+## Project-specific ignores:
+*.pdf
+.spec-workflow/
+__MACOSX/
+._*
+
 # tcolorbox
 *.listing
 
