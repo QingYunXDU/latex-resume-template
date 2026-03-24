@@ -31,15 +31,15 @@
 
 % 定义字体，请记得从网站提供的地址下载
 \setCJKsansfont{思源黑体 CN Light}[
-    Path = ./fonts/, 
+    Path = ./fonts/,
     UprightFont = SOURCEHANSANSCN-LIGHT.OTF, % 直立体
     BoldFont = SOURCEHANSANSCN-BOLD.OTF,       % 粗体
     ItalicFont = JiangChengXieHei 200W.ttf,    % 斜体
-] 
+]
 \newcommand{\semibook}{\firabook \CJKfontspec[Path = ./fonts/]{SOURCEHANSANSCN-REGULAR.OTF} }
 \newcommand{\semibf}{\firamedium \CJKfontspec[Path = ./fonts/]{SOURCEHANSANSCN-MEDIUM.OTF} }
-\newcommand{\semibookit}{\itshape\firabook \CJKfontspec[Path = ./fonts/]{JiangChengXieHei 400W.TTF} }
-\newcommand{\semibfit}{\itshape\firamedium \CJKfontspec[Path = ./fonts/]{JiangChengXieHei 500W.TTF} }
+\newcommand{\semibookit}{\itshape\firabook \CJKfontspec[Path = ./fonts/]{SOURCEHANSANSCN-REGULAR.OTF} }
+\newcommand{\semibfit}{\itshape\firamedium \CJKfontspec[Path = ./fonts/]{SOURCEHANSANSCN-MEDIUM.OTF} }
 \newcommand{\heavybf}{\firaheavy \CJKfontspec[Path = ./fonts/]{SOURCEHANSANSCN-HEAVY.OTF} }
 
 
@@ -54,8 +54,8 @@
 % \setCJKsansfont[ItalicFont={江城斜黑体 200W}]{思源黑体 CN Light}
 % \newcommand{\semibook}{\firabook \CJKfontspec{思源黑体 CN} }
 % \newcommand{\semibf}{\firamedium \CJKfontspec{思源黑体 CN Medium} }
-% \newcommand{\semibookit}{\itshape\firabook \CJKfontspec{江城斜黑体 400W} }
-% \newcommand{\semibfit}{\itshape\firamedium \CJKfontspec{江城斜黑体 500W} }
+% \newcommand{\semibookit}{\itshape\firabook \CJKfontspec{思源黑体 CN} }
+% \newcommand{\semibfit}{\itshape\firamedium \CJKfontspec{思源黑体 CN Medium} }
 % \newcommand{\heavybf}{\firaheavy \CJKfontspec{思源黑体 CN Heavy}}
 
 
@@ -100,7 +100,7 @@
 % \definecolor{links}{HTML}{bf5b5b} %西电红（浅）
 
 
-%------------------------------------------------------------------------------------------------------------------- 
+%-------------------------------------------------------------------------------------------------------------------
 
 % Defines to make listing easier
 \def \linkedin {\linkedinicon \hspace{3pt}\href{\linkedinlink}{\linkedintext}}
@@ -123,7 +123,7 @@
     urlcolor=links,
 }
 
-% Set the margin alignment 
+% Set the margin alignment
 \raggedbottom
 \raggedright
 % \RaggedRight
@@ -187,8 +187,8 @@
   \vspace{-3pt}\item[]
     \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
       \textbf{\color{secondary}#1} & {\semibook\color{accent}\small#2} \\
-    \end{tabularx}  \vspace{-2pt}  
-    
+    \end{tabularx}  \vspace{-2pt}
+
     {\small #3}
     \vspace{-6pt}
 }
@@ -197,7 +197,7 @@
 \newcommand{\resumeEntryS}[2]{
   \item[]\small
     \textbf{\color{secondary}#1 　}\justifying #2  \vspace{-3pt}
-  
+
 }
 
 % Entry for special (Publications)
@@ -244,7 +244,7 @@
         {\emailicon} &{\small#2} \\
         {\websiteicon} &{\small#3} \\
         {\hometownicon} &{\small#4} \\
-        {\birthdayicon} &{\small#5} 
+        {\birthdayicon} &{\small#5}
       \end{tabular}
     }
   \end{tabularx}
